@@ -1,7 +1,9 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "node": true,
+        "vue/setup-compiler-macros": true,
     },
     "extends": [
         "eslint:recommended",
@@ -17,6 +19,7 @@ module.exports = {
         "vue",
         "@typescript-eslint"
     ],
+    "parser": "vue-eslint-parser",
     "rules": {
     }
 }
