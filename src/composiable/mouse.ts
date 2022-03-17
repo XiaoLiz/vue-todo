@@ -1,26 +1,26 @@
-
-import { ref, Ref, onMounted, onUnmounted } from "vue";
+import type { Ref } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 
 interface MousePointe {
-    x: Ref<number>
-    y: Ref<number>
+    x: Ref<number>;
+    y: Ref<number>;
 }
 
-export default function useMouse():MousePointe {
+export default function useMouse(): MousePointe {
     const x = ref(0);
     const y = ref(0);
 
-    function update(e:MouseEvent) {
+    function update(e: MouseEvent) {
         x.value = e.pageX;
         y.value = e.pageY;
     }
 
     onMounted(() => {
-        window.addEventListener('mousemove', update)
+        window.addEventListener('mousemove', update);
     });
 
     onUnmounted(() => {
-        window.removeEventListener('mousemove', update)
+        window.removeEventListener('mousemove', update);
     });
 
     return { x, y };

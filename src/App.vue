@@ -1,15 +1,22 @@
 <template>
     <div>
-        <Rate :value="score"></Rate>
+        <Rate v-model="score" color="blue" />
+        <Rate v-model="score1" />
+
+        <VShowTest />
     </div>
 </template>
 
-<script lang='ts' setup>
-import { ref } from "vue";
-import Rate from "./components/Rate.vue";
+<script lang="ts" setup>
+import { ref } from 'vue';
+import Rate from './components/Rate.vue';
+// import TodoList from './components/TodoList.vue';
+import VShowTest from './components/VShowTest.vue';
 
-let score = ref(3);
+const score = ref(3);
+const score1 = ref(2);
+const score5 = ref(5);
+console.log(score5.value);
 </script>
 
-<style lang="less">
-</style>
+<style lang="less"></style>

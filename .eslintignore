@@ -1,0 +1,8 @@
+public/
+node_modules/
+dist/
+
+.vscode/
+.husky/
+
+src/env.d.ts
