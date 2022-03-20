@@ -21,8 +21,8 @@ git规范分支管理， hook来做eslint或单元测试
 
 开发效率：
 
-1.无需手动引入依赖以及组件，安装 pnpm i  unplugin-vue-components -D
-
+1.无需手动引入组件，安装 pnpm i  unplugin-vue-components -D
+2.vite无需手动导入vue依赖， npm i -D unplugin-auto-import （不推荐）
 
 
 
