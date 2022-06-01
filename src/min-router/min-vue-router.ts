@@ -4,14 +4,15 @@
 //2.注册全局router-link 和 router-view
 //3.路由变化的时候，router-view找到匹配的组件、动态渲染
 
-interface options {
-    router: string;
-    history: string;
-}
+import { App, ref, inject } from 'vue';
 
-import { ref, inject } from 'vue';
 import RouterLink from './RouterLink.vue';
 import RouterView from './RouterView.vue';
+
+// interface options {
+//     router: string;
+//     history: string;
+// }
 
 function createRouter(options) {
     return new Router(options);
@@ -34,7 +35,7 @@ function userRouter() {
 }
 
 class Router {
-    constructor(options: any) {
+    constructor(options) {
         this.routes = options.routes;
         this.history = options.history;
 
@@ -47,7 +48,7 @@ class Router {
         });
     }
 
-    install(app) {
+    install(app: App) {
         app.provide(ROUTER_KEY, this);
         app.component('RouterLink', RouterLink);
         app.component('RouterView', RouterView);

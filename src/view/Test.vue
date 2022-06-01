@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>test overlay</h1>
+        <h1>Test Overlay</h1>
     </div>
 </template>
 

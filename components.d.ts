@@ -4,6 +4,16 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Aside: typeof import('./src/components/container/Aside.vue')['default']
+    Container: typeof import('./src/components/container/Container.vue')['default']
+    Contaner: typeof import('./src/components/container/Contaner.vue')['default']
+    Footer: typeof import('./src/components/container/Footer.vue')['default']
+    Header: typeof import('./src/components/container/Header.vue')['default']
+    'Header copy': typeof import('./src/components/container/Header copy.vue')['default']
+    Main: typeof import('./src/components/container/Main.vue')['default']
+    Mian: typeof import('./src/components/container/Mian.vue')['default']
+    Overlay: typeof import('./src/components/Overlay.vue')['default']
+    PopUp: typeof import('./src/components/PopUp.vue')['default']
     Rate: typeof import('./src/components/Rate.vue')['default']
     TodoList: typeof import('./src/components/TodoList.vue')['default']
     VShowTest: typeof import('./src/components/VShowTest.vue')['default']

@@ -32,10 +32,10 @@ interface Todos {
 }
 
 const todos = ref<Todos[]>([
-{
+    {
         title: '学习vue3',
         done: false,
-},
+    },
     {
         title: '健身',
         done: false,

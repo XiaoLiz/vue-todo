@@ -1,0 +1,19 @@
+$namespace: 'vt';
+
+$bg-color: #e3e3e3;
+$--header-padding: 10px;
+
+@mixin b($block){
+    $B: $namespace+'-'+$block;
+    .#{$B}{
+        @content;
+    }
+};
+
+@mixin when($state) {
+    @at-root {
+        &.#{$state}{
+            @content;
+        }
+    }
+}
