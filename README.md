@@ -27,15 +27,14 @@ vue工具库: vueuse
         · git husky add .husky/commit-msg "node script verifyCommit.js" //提交commit信息钩子
 
 ## Extends的规则
-1.EsLint 推荐的规则：eslint:recommended, 通过使用 "extends": "eslint:recommended"来启用推荐的规则。
-2.Vue文件校验的规则: plugin:vue/essential, 通过安装官方的 eslint-plugin-vue支持，它支持同时检查你.vue文件中的模板和脚本，增加对v-if，v-for等指令的校验等。
-3.prettier校验：plugin:prettier/recommended，根据配置的prettier规则进行校验。
+    1.EsLint 推荐的规则：eslint:recommended, 通过使用 "extends": "eslint:recommended"来启用推荐的规则。
+    2.Vue文件校验的规则: plugin:vue/essential, 通过安装官方的 eslint-plugin-vue支持，它支持同时检查你.vue文件中的模板和脚本，增加对v-if，v-for等指令的校验等。
+    3.prettier校验：plugin:prettier/recommended，根据配置的prettier规则进行校验。
 
 
 ## 开发效率：
-
-1.无需手动引入组件，安装 pnpm i  unplugin-vue-components -D
-2.vite无需手动导入vue依赖， npm i -D unplugin-auto-import （不推荐）
+    1.无需手动引入组件，安装 pnpm i  unplugin-vue-components -D
+    2.vite无需手动导入vue依赖， npm i -D unplugin-auto-import （不推荐）
 
 
 
