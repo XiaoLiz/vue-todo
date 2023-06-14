@@ -1,14 +1,13 @@
 ## 项目介绍
-
-框架：vue3
-语言：Typescript
-包管理：pnpm
-路由：vue-router
-构建工具：vite
-css预处理：sass
-网络请求： pinia
-vue工具库: vueuse
-组件库：element3 elementplush naiveui antd-vue
+    框架：vue3
+    语言：Typescript
+    包管理：pnpm
+    路由：vue-router
+    构建工具：vite
+    css预处理：sass
+    数据存储： pinia
+    vue工具库: vueuse
+    组件库：element3 elementplush naiveui antd-vue
 
 ## 代码规范: ESlint prettier(尽可能和的松散)
     1. pnpm add -D eslint @antfu/eslint-config
